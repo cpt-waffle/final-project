@@ -20,18 +20,13 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/cats', catsRouter);
 
-app.get('/tttttttttttt', (req, res) => {
+app.get('/dogs', (req,res) => {
+  res.send('ok');
+})
+
+app.get('/test', (req,res) => {
   res.send('ok');
 })
 
 
-app.get('/tttttttttttt', (req, res) => {
-  res.send('ok');
-})
-
-
-app.get('/tttttttttttt', (req, res) => {
-  res.send('ok');
-})
-
-module.exports = app;
+ module.exports = app;

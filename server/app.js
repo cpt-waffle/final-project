@@ -29,8 +29,4 @@ app.get('/test', (req,res) => {
 })
 
 
-app.get('/aaaa', (req,res) => {
-  res.send('ok');
-})
-
-module.exports = app;
+ module.exports = app;

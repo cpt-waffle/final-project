@@ -17,4 +17,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get('/cats', (req, res) => {
+  const cats = ['Garfield', 'Hello Kitty', 'Felix', 'Fritz', 'Tintin', 'Rebel', 'Salem', 'Mr Meows'];
+  // ^ this would be our database call....
+  res.json(cats);
+})
+
+
 module.exports = app;
